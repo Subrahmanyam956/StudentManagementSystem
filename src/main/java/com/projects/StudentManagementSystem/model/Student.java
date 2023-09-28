@@ -13,8 +13,9 @@ public class Student {
     private String lastName;
     private String email;
 
-    public Student(String id, String firstName, String lastName, String email) {
-        this.id = id;
+    public Student() {}
+
+    public Student( String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -22,6 +23,10 @@ public class Student {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public void setFirstName(String firstName) {
@@ -36,9 +41,6 @@ public class Student {
         this.email = email;
     }
 
-    public String getId() {
-        return id;
-    }
 
     public String getFirstName() {
         return firstName;
