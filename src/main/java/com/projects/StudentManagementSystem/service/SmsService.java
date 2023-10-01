@@ -2,9 +2,11 @@ package com.projects.StudentManagementSystem.service;
 
 import com.projects.StudentManagementSystem.model.Student;
 import com.projects.StudentManagementSystem.repository.StudentManagementSystemRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SmsService {
     private final StudentManagementSystemRepository studentManagementSystemRepository;
 
